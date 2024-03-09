@@ -7,9 +7,9 @@
 // Output: 10
 // Explanation: The smallest multiple of both 5 and 2 is 10.
 
-class Solution {
-public:
-    int smallestEvenMultiple(int n) {
-           return n*(n%2+1);
-    }
-};
+// class Solution {
+// public:
+//     int smallestEvenMultiple(int n) {
+//            return n*(n%2+1);
+//     }
+// };
