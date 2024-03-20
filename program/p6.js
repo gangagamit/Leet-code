@@ -20,7 +20,6 @@ for (i = 0; i < num.length; i++) {
     arr.push(num[i])
 }
 arr.sort(function (a, b) { return b - a })
-//console.log(num, arr)
 for (i = 0; i < arr.length; i++) {
     if (num[i] !== arr[i]) {
         temp = num[i]
