@@ -12,25 +12,25 @@
 
 
 
-var maximumSwap = function(num) {
-    num = num.toString().split('')
-arr = []
-for (i = 0; i < num.length; i++) {
-    num[i] = parseInt(num[i])
-    arr.push(num[i])
-}
-arr.sort(function (a, b) { return b - a })
-for (i = 0; i < arr.length; i++) {
-    if (num[i] !== arr[i]) {
-        temp = num[i]
-        num[i] = arr[i]
-        num[num.lastIndexOf(arr[i])] = temp
-        break
-    }
-}
-return parseInt(num.join(''))
+// var maximumSwap = function(num) {
+//     num = num.toString().split('')
+// arr = []
+// for (i = 0; i < num.length; i++) {
+//     num[i] = parseInt(num[i])
+//     arr.push(num[i])
+// }
+// arr.sort(function (a, b) { return b - a })
+// for (i = 0; i < arr.length; i++) {
+//     if (num[i] !== arr[i]) {
+//         temp = num[i]
+//         num[i] = arr[i]
+//         num[num.lastIndexOf(arr[i])] = temp
+//         break
+//     }
+// }
+// return parseInt(num.join(''))
 
-};
+// };
 
 
 // let max=[7];
@@ -40,16 +40,22 @@ return parseInt(num.join(''))
 // j.unshift(7);
 // j.pop();
 // console.log(j);
-//  function Max(){
+ 
 
-//      function myArrayMax(arr){
-//          console.log(Math.max.apply(null,arr));
-//      } 
-//      const num1 = [2,7,3,6];
-//      console.log(num1);
-//      myArrayMax(num1);
-//  }
-//  Max();
+     function myArrayMax(arr){
+         console.log(Math.max.apply(null,arr));
+     } 
+      const num1 = [2,7,3,6]
+      myArrayMax(num1)
+      
+     console.log(num1);
+     let b=num1.concat( myArrayMax(num1));
+    // let a = myArrayMax(num1);
+//    let b = num1.unshift(a);
+//    console.log(b);
+    // let b = a.(num1);
+    //  console.log(a.unshift(num1));
+
 
 
 // const num = [2,7,3,6];
