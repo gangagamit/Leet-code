@@ -14,7 +14,7 @@ Companies
 // Output: true
 // Explanation: 27 = 33
 
-var isPowerOfThree = function(n) {
-    let x = Math.pow(3, n);
-    return x;
-};
+// var isPowerOfThree = function(n) {
+//     let x = Math.pow(3, n);
+//     return x;
+// };
